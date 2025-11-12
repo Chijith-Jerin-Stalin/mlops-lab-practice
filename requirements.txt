@@ -1,0 +1,4 @@
+sympy
+Flask
+skikit-learn
+pickle
