@@ -23,13 +23,18 @@ rdcmodel.fit(X_train,y_trian)
 drcmodel.fit(X_train,y_trian)
 lrmodel.fit(X_train,y_trian)
 
+# print(rdcmodel.predict([[5.1,3.5,1.4,0.2]]))
+
 with open("rdcmodel.pkl","wb") as f:
     pickle.dump(rdcmodel,f)
 
-with open("drcmodel.pkl","wb") as f:
-    pickle.dump(drcmodel,f)
+with open("leencoder.pkl","wb") as f:
+    pickle.dump(le,f)
 
-with open("lrmodel.pkl","wb") as f:
-    pickle.dump(lrmodel,f)
+# with open("drcmodel.pkl","wb") as f:
+#     pickle.dump(drcmodel,f)
 
-print("✅ Model trained and saved as model.pkl")
+# with open("lrmodel.pkl","wb") as f:
+#     pickle.dump(lrmodel,f)
+
+print("Model trained and saved as rdcmodel.pkl")

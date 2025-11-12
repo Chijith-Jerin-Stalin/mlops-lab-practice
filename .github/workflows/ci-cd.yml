@@ -20,4 +20,8 @@ jobs:
             - name: Training Model
               run: |
                 python train_model.py
+            
+            - name: Building Docker Container
+              run: |
+                docker build -t model-ml .
               
