@@ -1,4 +1,3 @@
 sympy
 Flask
 scikit-learn
-pickle
